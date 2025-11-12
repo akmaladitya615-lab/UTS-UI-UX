@@ -1,0 +1,90 @@
+# UTS-UI-UX
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Tempat Rekreasi Eksklusif</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="card-container">
+        
+        <header class="form-header">
+            <h2>✨ Registrasi Tempat Rekreasi</h2>
+            <p>Lengkapi detail Tempat Wisata Anda untuk pendaftaran.</p>
+        </header>
+
+        <form action="#" method="post" class="modern-form">
+            
+            <fieldset class="form-section">
+                <legend>Informasi Umum</legend>
+
+                <div class="input-group">
+                    <label for="nama_tempat">Nama Tempat Wisata</label>
+                    <input type="text" id="nama_tempat" name="nama_tempat" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="jenis_rekreasi">Jenis Rekreasi</label>
+                    <select id="jenis_rekreasi" name="jenis_rekreasi" required>
+                        <option value="" disabled selected>-- Pilih Kategori --</option>
+                        <option value="Alam">Alam & Ekologi</option>
+                        <option value="Edukasi">Edukasi & Sejarah</option>
+                        <option value="Hiburan">Hiburan & Theme Park</option>
+                        <option value="Religi">Religi & Budaya</option>
+                    </select>
+                </div>
+
+                <div class="input-group full-width">
+                    <label for="deskripsi">Deskripsi Wisata Singkat</label>
+                    <textarea id="deskripsi" name="deskripsi" rows="3" placeholder="Jelaskan daya tarik utama tempat Anda..."></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section contact-location">
+                <legend>Kontak & Lokasi</legend>
+
+                <div class="input-group">
+                    <label for="kontak_person">Kontak Person</label>
+                    <input type="text" id="kontak_person" name="kontak_person">
+                </div>
+
+                <div class="input-group">
+                    <label for="no_hp">No HP/Telepon</label>
+                    <input type="tel" id="no_hp" name="no_hp">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Resmi</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="input-group">
+                    <label for="alamat_web">Alamat Web</label>
+                    <input type="url" id="alamat_web" name="alamat_web" value="https://">
+                </div>
+                
+                <div class="input-group full-width">
+                    <label for="alamat_lengkap">Alamat Lengkap</label>
+                    <textarea id="alamat_lengkap" name="alamat_lengkap" rows="2"></textarea>
+                </div>
+
+                <div class="input-group full-width">
+                    <label for="lat_long">Koordinat (Latitude, Longitude)</label>
+                    <input type="text" id="lat_long" name="lat_long" placeholder="-6.2345, 106.8765">
+                </div>
+            </fieldset>
+
+            <div class="form-actions">
+                <button type="reset" class="btn-secondary">Batal/Reset</button>
+                <button type="submit" class="btn-primary">Daftar Tempat Wisata</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
