@@ -1,0 +1,158 @@
+/* 1. RESET DAN FONT */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f4068 0%, #162447 100%); /* Latar belakang gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* 2. KONTENER UTAMA (Card) */
+.card-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 700px; /* Ukuran form lebih besar */
+    overflow: hidden;
+}
+
+/* 3. HEADER FORM */
+.form-header {
+    background-color: #1b1b2f;
+    color: white;
+    padding: 25px 30px;
+    text-align: center;
+    border-bottom: 40px solid #e45826; /* Garis pemisah yang menarik */
+}
+
+.form-header h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.form-header p {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* 4. STRUKTUR FORM */
+.modern-form {
+    padding: 50px;
+}
+
+.form-section {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.form-section legend {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #e45826;
+    padding: 0 10px;
+}
+
+/* Menggunakan CSS GRID untuk layout yang rapi */
+.form-section {
+    display: grid;
+    /* Membuat dua kolom dengan lebar yang sama */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+}
+
+/* Untuk group yang memerlukan lebar penuh (misal: deskripsi, alamat) */
+.input-group.full-width {
+    grid-column: 1 / -1; /* Mengambil semua kolom */
+}
+
+/* 5. INPUT GROUP */
+.input-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-group label {
+    flex: 0 0 40%;
+    text-align: right;
+    padding-right: 15px;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    height: 40px;
+    border: 1px solid #cceeff;
+    border-radius: 6px;
+    background-color: #f7f9fc;
+    font-family: inherit;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #1b1b2f;
+    box-shadow: 0 0 0 3px rgba(27, 27, 47, 0.2);
+    outline: none;
+    background-color: #fff;
+}
+
+/* 6. TOMBOL AKSI */
+.form-actions {
+    display: flex;
+    justify-content: flex-end; /* Tombol di pojok kanan */
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 1px dashed #ccc;
+}
+
+.form-actions button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+/* Tombol Primer (Daftar) */
+.btn-primary {
+    background-color: #e45826;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #d14a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tombol Sekunder (Batal/Reset) */
+.btn-secondary {
+    background-color: #ccc;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #bbb;
+    transform: translateY(-2px);
+}
